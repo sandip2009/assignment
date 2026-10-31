@@ -90,8 +90,8 @@
     $(document).ready(function () {
         $('#period-select').on('change', function () {
             let period = $(this).val();
+            // console.log(period);
 
-            // Update download button route parameter dynamically
             let exportUrl = "{{ route('client.short-urls.export') }}?period=" + period;
             $('#download-btn').attr('href', exportUrl);
         });
