@@ -2,7 +2,7 @@
 
 @section('title', 'All Members')
 @section('brand-title', 'Client Admin Dashboard')
-@section('header-title', 'All Short URLs')
+@section('header-title', 'Members')
 
 @section('content')
 
@@ -60,7 +60,7 @@
         });
     });
 </script>
-
+@endpush
 @push('styles')
     <style>
         /* Your existing styles remain untouched */
