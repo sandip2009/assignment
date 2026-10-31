@@ -97,7 +97,7 @@
         });
     }); 
 </script>
-
+@endpush
 @push('styles')
     <style>
         /* Your existing styles remain untouched */

@@ -36,7 +36,7 @@ class AuthController extends Controller
             return match ($user->role) {
                 'SuperAdmin' => redirect()->route('superadmin.dashboard'),
                 'Admin'      => redirect()->route('client.dashboard'),
-                // 'Member'     => redirect()->route('client.dashboard'),
+                'Member'     => redirect()->route('client.dashboard'),
                 default      => $this->logoutInvalidRole($request),
             };
         }

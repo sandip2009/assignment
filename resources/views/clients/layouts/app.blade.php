@@ -258,7 +258,7 @@
                 >
                     @csrf
 
-                    <button type="submit" class="logout-btn">
+                    <button type="submit" class="logout-btn btn">
                         Logout &rarr;
                     </button>
                 </form>
