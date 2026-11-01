@@ -10,7 +10,6 @@ Each user will n either be an Admin n or a Member
 
 * **PHP:** ^8.2 (Laravel 12)
 * **Database:** MySQL / MariaDB
-* **Node.js & NPM:** Required for frontend asset building (Vite)
 * **Environment:** Local development via XAMPP, Laragon, or Artisan Server
 
 ---
