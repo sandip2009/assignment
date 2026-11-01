@@ -46,7 +46,7 @@ You can set up this project quickly using either the automated Composer setup sc
 Your project includes an automated setup script in `composer.json`. Run the following command in your terminal:
 ```bash
 composer setup
-
+```
 1. Clone the Repository
 git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git]
 (https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git)
@@ -55,12 +55,12 @@ cd YOUR_REPOSITORY_NAME
 2. Install PHP Dependencies
 ```bash
 composer install
-
+```
 3. Configure Environment File
 Copy the environment file and configure your local MySQL database credentials:
 ```bash
 cp .env.example .env
-
+```
 Open .env and update your database settings:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -72,28 +72,27 @@ DB_PASSWORD=
 4. Generate Application Key (if need)
 ```bash
 php artisan key:generate
-
+```
 
 5. Run Migrations & Seeders
 Run migrations and seed the database with your raw SQL SuperAdmin account:
 ```bash
 php artisan migrate --seed
-
+```
 if seed not work 
 ```bash
 php artisan db:seed --class=SuperAdminSeeder
-
+```
 ```bash
 php artisan serve
-
-hit this url 
+```
+use this url 
+```bash
 http://localhost:8000/login 
-
+```
 for super admin
 email : superadmin@example.com
 password : SuperAdmin@123
-
-
 
 ## 📧 Invitation Events, Listeners & Queue System
 
@@ -111,3 +110,4 @@ When testing invitation flows locally, please ensure you run one of the followin
 #### Option 1: Run Queue Worker (Recommended for testing)
 ```bash
 php artisan queue:work
+```
