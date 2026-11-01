@@ -86,7 +86,13 @@ php artisan db:seed --class=SuperAdminSeeder
 ```bash
 php artisan serve
 ```
-
+use this url 
+```bash
+http://localhost:8000/login 
+```
+for super admin
+email : superadmin@example.com
+password : SuperAdmin@123
 
 ## 📧 Invitation Events, Listeners & Queue System
 

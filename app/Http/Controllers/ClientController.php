@@ -21,7 +21,6 @@ class ClientController extends Controller
     {
         $user = $request->user();
 
-        // Only company Admins can access this dashboard.
         abort_unless($user->role === 'Admin' || $user->role === 'Member', 403);
         // An Admin must belong to a company.
         abort_unless($user->client_id !== null, 403);
@@ -142,6 +141,8 @@ class ClientController extends Controller
             $query->whereBetween('created_at', [now()->subWeek()->startOfWeek(), now()->subWeek()->endOfWeek()]);
         } elseif ($period === 'last_month') {
             $query->whereMonth('created_at', now()->subMonth()->month);
+        } else {
+            $query->whereMonth('created_at', now()->month);
         }
 
         // dd($query->toSql());
